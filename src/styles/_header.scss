@@ -1,0 +1,118 @@
+@use 'variaveis';
+
+.header {
+    background-color: variaveis.$corDeFundo;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: all .5s ease;
+
+        .language-selector, img{
+            opacity: 0;
+            visibility: 0;
+            transition: opacity .5s ease;
+        }
+
+        .header {
+            &__logo, &__list {
+                opacity: 0;
+                visibility: 0;
+                transition: opacity .5s ease;
+            }            
+        }
+    }
+
+    &__container {
+        padding: 0px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+            flex-direction: column;
+        }
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        max-height: 43px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        
+
+        &__item {
+            padding: 0 10px;
+
+            &__link {
+                font-size: 15px;
+                font-weight: 700;
+                text-decoration: none;
+                color: variaveis.$corTextoSecundario;
+
+                &:hover {
+                    color: darken(variaveis.$corTextoSecundario, 15%);
+                }
+            }            
+        }
+    }
+
+    &__button {
+        height: 74px;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+
+        button {
+            margin-left: 8px;
+            height: 48px;
+            opacity: .8;
+        }
+    }
+
+    .launch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px #fff;
+        padding: 9px;
+        border-radius: 36px;
+        height: 32px;
+    }
+
+    .language-selector {
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: bold;
+        color: variaveis.$corTextoSecundario;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        option {
+            color: variaveis.$corDeFundo;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+}
+
+

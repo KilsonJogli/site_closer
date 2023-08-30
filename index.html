@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/closer_logo.png" alt="logo filmelier">
+            </h1>
+            <div>
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a class="header__list__item__link" href="#">Filmes</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a class="header__list__item__link" href="#">Listas</a>
+                    </li>
+                    <li class="header__list__item">
+                        <a class="header__list__item__link" href="#">Notícias</a>
+                    </li>
+                    <li class="header__list__item">
+                        <div>
+                            
+                            <a class="header__list__item__link launch" href="#">
+                                <img src="https://www.filmelier.com/images/svg/star_border.svg" alt="Star">
+                                Lançamentos
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__button">
+                <div class="language-selector">
+                    <img src="./dist/images/globe.svg" alt="Globo">
+                    <select >
+                        <option>Português</option>
+                        <option>Inglês</option>
+                    </select>
+                </div>
+                <button class="button button--dark" type="button">Entrar</button>
+            </div>
+        </div>
+    </header>
+    <section class="logo">
+        <div>
+            <div>
+                <img class="logo__content" src="./dist/images/closer_logo.png" alt="Logo Closer">
+            </div>
+    </section>
+    <section class="about">
+        <nav class="about__tabs">
+            <button data-tab-button="sobre" class="about__tabs__button about__tabs__button--is-active">
+                Sobre
+            </button>
+            <button data-tab-button="alice" class="about__tabs__button">
+                Alice
+            </button>
+            <button data-tab-button="dan" class="about__tabs__button">
+                Dan
+            </button>
+            <button data-tab-button="anna" class="about__tabs__button">
+                Anna
+            </button>
+            <button data-tab-button="larry" class="about__tabs__button">
+                Larry
+            </button>
+        </nav>
+        <ul class="about__list">
+            <li data-tab-id="sobre" class="about__list__item about__list__item--is-active">
+                <img src="./dist/images/closer_sobre.jpg" alt="Cena do filme. Larry e Alice">
+                <div>
+                    <h2 class="title">Sobre</h2>
+                    <p class="text--big">
+                        A filmografia do cineasta Mike Nichols abrange vários gêneros, mas desde o icônico 'A Primeira Noite de um Homem' fica claro que seu melhor elemento são os romances complicados entre várias pessoas, cujas dificuldades amorosas trazem à tona o que há de mais sombrio de si mesmas. 'Closer: Perto Demais' segue uma linha semelhante, pois reúne quatro personagens radicalmente diferentes (magistralmente interpretados por Julia Roberts, Clive Owen, Natalie Portman e Jude Law) que procuram preencher seus vazios juntos, descobrindo verdades desagradáveis ​​ao longo do caminho . O filme rendeu o Globo de Ouro para Portman e Owen por suas atuações, e ambos foram até indicados ao Oscar. 
+                    </p>
+                </div>
+            </li>
+            <li data-tab-id="alice" class="about__list__item">
+                <img src="./dist/images/natalie.jpg" alt="Alice">    
+                <div>                    
+                    <h2 class="title">Alice</h2>
+                    <p class="text--big">
+                        No cenário principal desta história figuram duas mulheres muito distintas. Alice, que embora ainda muito jovem, possui em si a tristeza de uma vida inteira. Pode-se dizer que Alice é a personagem mais complexa desta história, não somente porque apresenta uma aura de independência e melancolia inexistente em quaisquer dos outros personagens, mas porque é misteriosa e forte, de modo que encanta. Pouco do seu passado é revelado, mas sabe-se que saiu dos Estados Unidos para pôr fim a um relacionamento. É sempre ela que os deixa; é sempre ela que decide quando é o fim do amor; é sempre ela que inicia uma nova vida. Inventa tantas vidas, que ao fim do filme, ainda não se sabe quem ela é de fato – ou se existe uma Alice Ayres.
+                    </p>
+                </div>
+            </li>
+            <li data-tab-id="dan" class="about__list__item">
+                <img src="./dist/images/judge.jpg" alt="Dan">
+                <div>
+                    <h2 class="title">Dan</h2>
+                    <p class="text--big">Dan, na verdade, é o mais inseguro de todos. Não sabe o que quer e acredita que pode amar duas pessoas ao mesmo tempo. Tal pensamento faz com que ele fique todo o tempo todo indo de um lado para o outro, indeciso entre Anna e Alice.
+                </div>
+            </li>
+            <li data-tab-id="anna" class="about__list__item">
+                <img src="./dist/images/julia.jpg" alt="Anna">
+                <div>
+                    <h2 class="title">Anna</h2>
+                    <p class="text--big">Anna, bem-sucedida na carreira de fotógrafa, revela aos poucos o cenário de sua vida amorosa, tendo sido vítima de violência em um relacionamento anterior à história. Todavia, seu processo de superação não se encontra concluído quando ela se envolve com Dan. Pelo contrário, demonstra a quem assiste que este novo relacionamento está imbuído de tantos maus tratos quanto o outro. Anna precisa aprender em sua jornada a buscar a própria felicidade, sem entregar-se a ilusões românticas.</p>
+                </div>
+            </li>
+            <li data-tab-id="larry" class="about__list__item">
+                <img src="./dist/images/clive.jpg" alt="Larry">
+                <div>
+                    <h2 class="title">Larry</h2>
+                    <p class="text--big">Enquanto isso, a outra figura masculina da história, Larry, é totalmente o oposto de Dan. Larry é mais bruto, sexual, racional. “I am a cave man!”. Quer, a todo custo, se sentir no poder. Essa sua ira por comando fica evidente em duas cenas. A primeira, quando descobre que Anna o traiu. A segunda, quando se encontra a sós com Alice na boate. Clive Owen driblou os obstáculos e fez uma maravilhosa composição.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/closer_logo.png" alt="Disney+">
+            <ul class="footer__links">                
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Políticas de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>              
+            </ul>
+            <p class="text--small">
+                ® 2023 Closer Company. Todos os direitos reservados.                   
+            </p>
+            <p class="text--small">
+                Closer é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Closer é comercializado por Closer Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+    
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
