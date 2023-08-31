@@ -7,6 +7,10 @@
     left: 0;
     z-index: 1;
 
+    @media (max-width: 768px) {
+        position: relative;
+    }
+
     &--is-hidden {
         background-color: transparent;
         transition: all .5s ease;
@@ -73,22 +77,35 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 768px) {
+            justify-content: flex-end;
+        }
+
         img {
             height: 20px;
             width: 20px;
+
+            @media (max-width:768px) {
+                height: 18px;
+                width: 18px;
+            }
         }
 
         button {
             margin-left: 8px;
             height: 48px;
             opacity: .8;
+            cursor: pointer;
+
+            @media (max-width:768px) {
+                height: 40px;
+            }
         }
     }
 
     .launch {
         display: flex;
         align-items: center;
-        justify-content: center;
         border: solid 1px #fff;
         padding: 9px;
         border-radius: 36px;
